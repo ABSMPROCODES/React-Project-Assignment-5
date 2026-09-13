@@ -1,4 +1,4 @@
- export interface Tprops {
+export interface Tprops {
   id: string;
   name: string;
   category: string;
