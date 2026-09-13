@@ -73,18 +73,18 @@ const Yourcard = ({
           </span>
         </div>
 
-        <button
-          type="button"
-          disabled={isAdded}
-          onClick={() => onAdd(Technology)}
-          className={`w-full py-3.5 rounded-xl text-sm font-semibold transition-colors ${
-            isAdded
-              ? 'bg-blue-100 text-blue-600 cursor-not-allowed'
-              : 'bg-[#0b1121] text-white hover:bg-slate-800'
-          }`}
-        >
-          {isAdded ? 'Added to Stack' : 'Add to Stack'}
-        </button>
+       <button
+  type="button"
+  disabled={isAdded}
+  onClick={() => onAdd(Technology)}
+  className={`w-full py-3.5 rounded-xl text-sm font-semibold transition-all ${
+    isAdded
+      ? 'bg-blue-100 text-blue-600 cursor-not-allowed'
+      : 'brand-gradient text-white hover:opacity-90 hover:-translate-y-0.5'
+  }`}
+>
+  {isAdded ? '✓ Added to Stack' : 'Add to Stack'}
+</button>
       </div>
     </div>
   );
