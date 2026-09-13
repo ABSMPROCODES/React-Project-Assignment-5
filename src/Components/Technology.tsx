@@ -1,11 +1,15 @@
-import React, { use, useState } from 'react';
+import { use, useState } from 'react';
 import { toast } from 'react-toastify';
 
 import type { Tprops } from '../type';
 import TechStack from './TechStack';
 import YourStack from './YourStack';
 
-const Technology = ({ Technologies }: { Technologies: Tprops[] }) => {
+const Technology = ({
+  Technologies,
+}: {
+  Technologies: Promise<Tprops[]>;
+}) => {
   const TechnologyData = use(Technologies);
 
   const [stack, setStack] = useState<Tprops[]>([]);

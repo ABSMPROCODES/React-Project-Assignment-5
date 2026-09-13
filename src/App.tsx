@@ -25,7 +25,7 @@ function App() {
       <Bannar />
 
       <Suspense fallback={<div>Loading...</div>}>
-        <Technology Technologies={Technologys} />
+        <Technology Technologies ={Technologys} />
       </Suspense>
 
       <Footer />

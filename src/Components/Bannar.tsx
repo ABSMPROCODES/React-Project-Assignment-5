@@ -1,4 +1,4 @@
-import React from 'react';
+
 import BannarImage from '../assets/banner-stack.png';
 const Bannar = () => {
   return (

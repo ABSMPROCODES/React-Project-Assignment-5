@@ -1,4 +1,3 @@
-import React from 'react';
 import type { Tprops } from '../type';
 import Yourcard from './Yourcard';
 

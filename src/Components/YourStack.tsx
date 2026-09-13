@@ -1,4 +1,4 @@
-import React from 'react';
+
 import type { Tprops } from '../type';
 
 const YourStack = ({
