@@ -11,11 +11,17 @@ const YourStack = ({
   onClear: () => void;
 }) => {
   return (
-    <div className="w-full lg:w-[340px] bg-white border border-slate-200 rounded-[24px] p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] h-fit lg:sticky lg:top-6">
+    <div className="w-full lg:w-[340px] bg-white border border-slate-200 rounded-[24px] p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] h-fit lg:sticky lg:top-24">
       <div className="mb-6">
-        <h2 className="text-2xl font-bold text-slate-900">
-          Your Tech Stack
-        </h2>
+        <div className="flex items-center justify-between">
+          <h2 className="text-2xl font-bold text-slate-900">
+            Your Tech Stack
+          </h2>
+
+          <span className="text-sm font-semibold text-slate-500">
+            {stack.length}
+          </span>
+        </div>
 
         <p className="text-sm text-slate-500 mt-1">
           Build your stack by selecting technologies
@@ -26,11 +32,11 @@ const YourStack = ({
         {stack.length === 0 ? (
           <div className="border-2 border-dashed border-slate-200 rounded-2xl p-6 text-center">
             <p className="text-sm text-slate-400">
-              No technology selected yet.
+              Your stack is empty.
             </p>
 
             <p className="text-xs text-slate-400 mt-1">
-              Click "Add to Stack" to get started.
+              Add technologies from the cards.
             </p>
           </div>
         ) : (
@@ -62,9 +68,10 @@ const YourStack = ({
               <button
                 type="button"
                 onClick={() => onRemove(tech.id)}
-                className="shrink-0 text-xs font-semibold text-red-500 hover:text-red-600 border border-red-100 hover:border-red-200 bg-white px-3 py-1.5 rounded-lg transition-colors"
+                aria-label={`Remove ${tech.name}`}
+                className="shrink-0 w-8 h-8 flex items-center justify-center rounded-lg border border-red-100 text-red-500 hover:bg-red-50 hover:border-red-200 transition-colors"
               >
-                Remove
+                ✕
               </button>
             </div>
           ))
@@ -76,7 +83,7 @@ const YourStack = ({
           <div className="flex items-center justify-between gap-3">
             <p className="text-xs text-slate-400">
               {stack.length}{' '}
-              {stack.length === 1 ? 'technology' : 'technologies'} selected
+              {stack.length === 1 ? 'Technology' : 'Technologies'} Selected
             </p>
 
             <button
