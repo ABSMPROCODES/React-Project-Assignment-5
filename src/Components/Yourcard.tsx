@@ -80,7 +80,7 @@ const Yourcard = ({
   className={`w-full py-3.5 rounded-xl text-sm font-semibold transition-all ${
     isAdded
       ? 'bg-blue-100 text-blue-600 cursor-not-allowed'
-      : 'brand-gradient text-white hover:opacity-90 hover:-translate-y-0.5'
+      : 'bg-black text-white hover:opacity-90 hover:-translate-y-0.5'
   }`}
 >
   {isAdded ? '✓ Added to Stack' : 'Add to Stack'}

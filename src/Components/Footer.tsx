@@ -1,39 +1,38 @@
 import React from 'react';
+import image from '../assets/logo-text.png';
 
 const Footer = () => {
   return (
-    <footer className="mt-20 border-t border-slate-200 bg-slate-950 text-slate-300">
+    <footer className="mt-20 border-t border-slate-200 bg-white text-slate-300">
       <div className="container mx-auto px-4 py-14">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
 
           <div>
-            <h2 className="text-2xl font-extrabold brand-gradient-text">
-              Dev Stack
-            </h2>
+           <img src={image} alt="Dev Stack Logo" />
 
-            <p className="mt-4 max-w-xs text-sm leading-6 text-slate-400">
-              Build your ideal technology stack by exploring modern
-              tools, frameworks, languages, and platforms.
+            <p className="mt-4 max-w-xs text-sm leading-6 text-slate-500">
+              Curated tools, technologies, and resources for developers building
+modern software.
             </p>
 
             <div className="mt-5 flex gap-4 text-sm">
               <a
                 href="#"
-                className="hover:text-white transition-colors"
+                className=" text-black  "
               >
                 GitHub
               </a>
 
               <a
                 href="#"
-                className="hover:text-white transition-colors"
+                className="text-black"
               >
                 Twitter
               </a>
 
               <a
                 href="#"
-                className="hover:text-white transition-colors"
+                className="text-black"
               >
                 LinkedIn
               </a>
@@ -41,45 +40,45 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-semibold text-white">Product</h3>
+            <h3 className="font-semibold text-black">Product</h3>
 
             <div className="mt-4 space-y-3 text-sm text-slate-400">
-              <a href="#" className="block hover:text-white">
+              <a href="#" className="block ">
                 Technologies
               </a>
-              <a href="#" className="block hover:text-white">
+              <a href="#" className="block ">
                 Projects
               </a>
-              <a href="#" className="block hover:text-white">
+              <a href="#" className="block ">
                 Features
               </a>
             </div>
           </div>
 
           <div>
-            <h3 className="font-semibold text-white">Company</h3>
+            <h3 className="font-semibold text-black">Company</h3>
 
             <div className="mt-4 space-y-3 text-sm text-slate-400">
-              <a href="#" className="block hover:text-white">
+              <a href="#" className="block ">
                 About
               </a>
-              <a href="#" className="block hover:text-white">
+              <a href="#" className="block ">
                 Contact
               </a>
-              <a href="#" className="block hover:text-white">
+              <a href="#" className="block ">
                 Careers
               </a>
             </div>
           </div>
 
           <div>
-            <h3 className="font-semibold text-white">Legal</h3>
+            <h3 className="font-semibold text-black">Legal</h3>
 
             <div className="mt-4 space-y-3 text-sm text-slate-400">
-              <a href="#" className="block hover:text-white">
+              <a href="#" className="block ">
                 Privacy
               </a>
-              <a href="#" className="block hover:text-white">
+              <a href="#" className="block ">
                 Terms
               </a>
             </div>
